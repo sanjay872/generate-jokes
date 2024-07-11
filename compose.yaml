@@ -1,0 +1,9 @@
+services:
+  fun-facts-service:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - mode: ingress
+        target: 3000
